@@ -26,5 +26,5 @@ Contact Me
 Provide ways for visitors to contact you or follow your work.
 
 Email: sombitbiswas.255@gmail.com
-LinkedIn: linkedin.com/in/sombit-biswas-07a6642b4
+LinkedIn: https://www.linkedin.com/in/sombit-biswas-07a6642b4/
 Personal Website: Your Website
