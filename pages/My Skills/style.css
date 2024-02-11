@@ -145,9 +145,6 @@ button{
   border-radius: 10px;
 }
 /* skills section */
-section{
-  height: 100vh;
-}
 .skills{
   display: flex;
   flex-direction: column;
