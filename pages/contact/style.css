@@ -14,6 +14,33 @@
     --border: .125rem solid #00abf0;
     --box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
 }
+
+/* sidebar */
+.sidebar{
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 200px;
+  z-index: 999;
+  background-color: rgba(255, 255, 255, 0);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0,0,0, 0.1);
+}
+.sidebar li{
+  text-decoration: none;
+  list-style: none;
+  width: 100%;
+}
+.sidebar a{
+  width: 100%;
+  font-size: 30px;
+  padding: auto;
+}
 .navbar{
     height: 56px;
     padding: 0 16px;
@@ -103,20 +130,20 @@ to {
     box-shadow: var(--box-shadow);
     color: #ffffff;
 }
+.menu{
+  display: none;
+}
 .main{
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
-  min-height: 1080px;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
- /* flex-wrap: wrap; */
 }
 .contact-form{
-  top: 100px;
   margin-left: 100px;
   display: flex;
   flex-direction: column;
-  /* width: 90%; */
 }
 .contact-titel{
 font-size: 30px;
@@ -164,9 +191,6 @@ lable{
   scale: 1.1;
 }
 .cartoon{
-
-    width: 50%;
-
         width: 700px
 }
 
@@ -182,9 +206,7 @@ lable{
   align-items: center;
   text-align: center;
 }
-.footer-page-link{
 
-}
 .footer-unlist{
   list-style: none;
   display: flex;
@@ -203,7 +225,59 @@ lable{
   color: #ffffff;
   border-bottom: 2px dashed white;
 }
+.social-media a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: transparent;
+  border: var(--border);
+  border-radius: 50%;
+  color: var(--main-color);
+  margin: 0 10px;
+  transition: .5s;
+  text-decoration: none;
+}
 footer p{
   margin-top: 20px;
   color: white;
+}
+
+
+@media (max-width: 768px) {
+  /* navbar */
+  .hideOnmobile{
+    display: none;
+}
+.menu{
+  display: block;
+}
+  .main{
+    height: 500px;
+    display: flex;
+  }
+  .contact-form{
+    margin: 0px;
+  }
+  .color-animation{
+    font-size: 15px;
+  }
+  .cartoon{
+    display: none;
+  }
+  .footer-unlist{
+    list-style: none;
+    display: flex;
+    gap: 0px;
+    font-size: 15px;
+    margin-right: 0px;
+    margin-bottom: 10px;
+    
+}
+
+.footer-copyright{
+    font-size: 15px;
+
+}
 }

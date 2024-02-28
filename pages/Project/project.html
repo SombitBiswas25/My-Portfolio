@@ -14,13 +14,26 @@
                 <h1 class="logo">PORTFOLIO</h1>
             </div>
             <div class="right-side">
-                <ul class="unlist">
-                    <li class="list"><a href="/pages/home/index.html">Home</a></li>
+                <ul class="sidebar" id="unlist">
+                    <li onclick=closeSidebar()><i style="font-size: 30px; cursor: pointer;" class="fa-solid fa-xmark"></i></li>
+                    <li class="list" ><a href="/pages/home/index.html">Home</a></li>
                     <li class="list" style="border-bottom: 2px solid #726ef5;"><a href="/pages/Project/project.html">Projects</a></li>
                     <li class="list"><a href="/pages/My Skills/skill.html">My Skills</a></li>
                     <li class="list"><a href="/pages/Services/service.html">Services</a></li>
                     <li class="list"><a href="/pages/about/about.html">About</a></li>
                     <li class="list"><a href="/pages/contact/contact.html">Contact Me</a></li>
+                   
+                </ul>
+                <ul class="unlist" id="unlist">
+                    <li class="list hideOnmobile"><a href="/pages/home/index.html">Home</a></li>
+                    <li class="list hideOnmobile" style="border-bottom: 2px solid #726ef5;"><a href="/pages/Project/project.html">Projects</a></li>
+                    <li class="list hideOnmobile"><a href="/pages/My Skills/skill.html">My Skills</a></li>
+                    <li class="list hideOnmobile"><a href="/pages/Services/service.html">Services</a></li>
+                    <li class="list hideOnmobile"><a href="/pages/about/about.html">About</a></li>
+                    <li class="list hideOnmobile"><a href="/pages/contact/contact.html">Contact Me</a></li>
+                    <li onclick=showSidebar() class="menu">
+                        <i class="fa-solid fa-bars" style="font-size: 30px; cursor: pointer;"></i>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -186,10 +199,23 @@
                             <a href=""><i class="fa-brands fa-github"></i></a>
                             <a href=""><i class="fa-brands fa-facebook"></i></a>
                         </div>
-                        <p class="color-animation">Copyright © 2023 - 2024 TermsFeed<sup>®</sup>. All rights reserved. </p>
+                        <p class="footer-copyright">Copyright © 2023 - 2024 TermsFeed<sup>®</sup>. All rights reserved. </p>
                   </footer>
 
             </div>
 </body>
+<script src="https://kit.fontawesome.com/32ee44a21a.js" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="project.js"></script>
+<script>
+    // sidebar
+function showSidebar(){
+const sidebar = document.querySelector('.sidebar')
+sidebar.style.display = 'flex'
+}
+function closeSidebar(){
+const sidebar = document.querySelector('.sidebar')
+sidebar.style.display = 'none'
+}
+</script>
 </html>
