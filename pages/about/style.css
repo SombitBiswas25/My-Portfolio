@@ -285,6 +285,12 @@ footer p{
   .menu{
     display: block;
 }
+.btn{
+  margin-bottom: 10px;
+}
+img{
+  width: 250px;
+}
   p{
     margin: 0px;
     font-size: 20px;

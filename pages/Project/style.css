@@ -222,7 +222,8 @@ p{
   scale: 1.1;
 }
 .card-img{
-  width: 200px;
+  /* width: 200px; */
+  width: 100%;
 }
 .card-title{
 color: #44107a;

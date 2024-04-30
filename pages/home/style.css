@@ -397,6 +397,9 @@ footer p{
     .menu{
         display: block;
     }
+    .btn{
+        margin-bottom: 10px;
+    }
     p{
         margin: 0px;
         font-size: 20px;

@@ -40,7 +40,7 @@ button{
   font-size: 20px;
   transition: 0.5s;
 }
-.btn-box a{
+.btn-box .btn{
   align-items: center;
   text-decoration: none;
 }

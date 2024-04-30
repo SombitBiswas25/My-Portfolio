@@ -254,17 +254,25 @@ footer p{
   display: block;
 }
   .main{
-    height: 500px;
+    height: 1000px;
     display: flex;
+    flex-direction: column;
   }
   .contact-form{
     margin: 0px;
+    
+  }
+  .wp{
+    display: none;
   }
   .color-animation{
     font-size: 15px;
   }
   .cartoon{
     display: none;
+  }
+  .right{
+    margin-top: 20px;
   }
   .footer-unlist{
     list-style: none;
