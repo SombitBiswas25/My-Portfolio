@@ -177,6 +177,9 @@ p{
 }
 /* main boidy */
 .main{
+  /* background-color: #e8fcf4; */
+  background-image: linear-gradient(to top, #efffef 0%, #e8f2fd 100%);
+
 
 }
 /* trending project */
